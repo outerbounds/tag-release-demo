@@ -26,7 +26,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Execute a test run
-        run: echo tests successful!
+        run: sleep 45
       
       # Runs a single command using the runners shell
       - name: Tag if run successful
