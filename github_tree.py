@@ -7,6 +7,7 @@ class GithubTree(FlowSpec):
 
     @step
     def start(self):
+        # foo
         self.next(self.end)
 
     @step
