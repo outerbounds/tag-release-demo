@@ -29,7 +29,7 @@ class SimpleTree(FlowSpec):
                 categorical.append(col)
         data_cat = pd.get_dummies(raw[categorical])
         data_num = raw[raw.columns.difference(categorical)]
-
+        #
         data = pd.concat([data_num, data_cat], axis=1)
         target = raw_target.apply(lambda x: 1 if x == 'Yes' else 0)
 
